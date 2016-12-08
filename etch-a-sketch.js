@@ -14,11 +14,11 @@ function createGrid() {
 
 function draw() {
 	
-	if (colorize==false) {
-		$(this).css({"background-color": "black"})
+	if (colorize) {
+		$(this).css({"background-color": getRandomColor()})
 	}
 	else {
-		$(this).css({"background-color": getRandomColor()})
+		$(this).css({"background-color": "black"})
 	}
 }
 
